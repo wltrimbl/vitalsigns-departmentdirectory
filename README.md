@@ -17,4 +17,10 @@ for providers at these four locations.
 6.  Render sorted table as HTML.
 
 
+* [1000 Lonely providers](data/LONEdata.html)  
+* [4000 Boston providers](data/MGHdata.html) 
+* [900 SF providers](data/SFGHdata.html) 
+* [2000 Uchicago providers](data/UCdata.html)
+
+
 
