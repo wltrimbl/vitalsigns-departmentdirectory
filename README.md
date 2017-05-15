@@ -24,10 +24,10 @@ for providers at these four locations.
 
 ## Department directories
 
-* [4000 Boston providers](http://www.mcs.anl.gov/~trimble/nodi/MGHdata.html) 
-* [2000 Uchicago providers](http://www.mcs.anl.gov/~trimble/nodi/UCdata.html)
-* [900 SF providers](http://www.mcs.anl.gov/~trimble/nodi/SFGHdata.html) 
-* [1000 Lonely providers](http://www.mcs.anl.gov/~trimble/nodi/LONEdata.html)  
+* [4000 Boston providers](https://rawgit.com/wltrimbl/vitalsigns-departmentdirectory/master/data/MGHdata.html) 
+* [2000 Uchicago providers](https://rawgit.com/wltrimbl/vitalsigns-departmentdirectory/master/data/UCdata.html) 
+* [900 SF providers](https://rawgit.com/wltrimbl/vitalsigns-departmentdirectory/master/data/SFGHdata.html)
+* [1000 Lonely providers](https://rawgit.com/wltrimbl/vitalsigns-departmentdirectory/master/data/LONEdata.html) 
 
 ## What do we find?
 * I expected big-city teaching-hospital doctors to receive more payments than their more isolated peers.  This seems to be the case.
