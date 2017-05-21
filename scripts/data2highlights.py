@@ -12,7 +12,9 @@ def getfields(data, fields):
         try:   
             if data[f] is None:
                  o.append("")
-            elif type(data[f]) is float or type(data[f]) is int  or type(data[f]) is bool:
+            elif type(data[f]) is float:
+                 o.append("{:.1f}".format(data[f]))
+            elif type(data[f]) is int  or type(data[f]) is bool:
                  o.append(str(data[f]))
             elif type(data[f]) is list:
                  o.append(";".join(data[f]))
@@ -35,6 +37,8 @@ for d in f:
     except KeyError:
         n1 = ""
     fn, ln = getfields(d, ["provider_first_name", "provider_last_name_legal_name"] ) 
+    if len(ln) < 2:
+        continue
     specialty = getfields(d, ["provider_specialty_display" ] )[0]
 #    print ("##" + specialty[0:7] + "##")
     if specialty[0:7] == "Student":
@@ -85,6 +89,18 @@ for d in f:
          TABLE.append("<span style=color:red>Speaking payment</span>")
     else:
          TABLE.append("<span style=color:green>Nothing unusual</span>")
+    LEGEND.append("% narcotics")
+    LEGEND.append("peer % narcotics")
+    if len(getfields(d, ["percentage_of_patients_receiving_narcotics"])[0]) > 0:
+        TABLE.append(getfields(d,["percentage_of_patients_receiving_narcotics"])[0])
+        TABLE.append("( peers "+getfields(d,["percentage_of_patients_of_peers_receiving_narcotics"])[0] +")")
+    else:
+        TABLE.extend(["",""])
+#    LEGEND.append("% 5 medicare visits")
+#    TABLE.append(getfields(d,["percentage_of_5_office_visits"])[0])
+#    LEGEND.append("peer % 5 visits")
+#    TABLE.append(getfields(d,["relative_number_of_5s_to_peers"])[0])
+    
     LEGEND.append("Most-prescribed medicare drugs")
     if drugs: 
          TABLE.append("{}".format(drugs))
