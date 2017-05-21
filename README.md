@@ -32,12 +32,14 @@ for providers at these four locations.
 ## What do we find?
 * I expected big-city teaching-hospital doctors to receive more payments than their more isolated peers.  This seems to be the case.
 * I expected rural doctors to have prescribing patters more similar to each other than to the large-hospital doctors--specifically I expected a few top drugs to be among the most prescribed for many doctors.   This doesn't seem to be so--the lists of most prescribed drugs are all over the map, and for the doctors I have top-5-medicare drug data for, there aren't any drugs that stand out. 
+(UPDATE: all of these datasets pooled do show the expected asymmetries -- some drugs are commonly used: HUMIRA  PRADAXA ELIQUIS BRILINTA  XARELTO.  These are mostly blood thinners (apparently) common in geriatric medicine.)
+
 * The majority of the providers in all the sets have no dollarsfordocs payments disclosed.  
-* On the data cleaning front, a considerable number of the "lonely providers" are medical professionals such as counselors and physicians assistants who lack prescribing authority; a smaller number are institutuional records that aren't meaningful.
+* On the data cleaning front, a considerable number of the "lonely providers" are medical professionals such as counselors and physicians assistants who lack prescribing authority; a smaller number are institutuional records that aren't meaningful. (UPDATE:  Alas, the first sample of lonely doctors used the billing address, not the practice address, so maybe this isn't quite what was intended.) 
 
 ## License, acknowlegements
 Thanks to Propublica and the sponsors of its May 2017 hackathon in Chicago, 1871, BetterDoctor, and Yelp.
-Thanks Particularly to Dr. Hannah Snyder and Dr. Jon Henry, for offering comments on the data on a Sunday morning.
+Thanks Particularly to Dr. Hannah Snyder (UCSF) and Dr. Jon Henry (MGH), for offering comments on the data on a Sunday morning.
 [CC-BY-2.0](https://creativecommons.org/licenses/by/2.0/)  Will Trimble
 
 
